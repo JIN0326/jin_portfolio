@@ -360,7 +360,7 @@ a {
 }
 
 .intro h1 {
-  margin: 28px 0 27px;
+  margin: 6px 0 27px;
   font-family: var(--display);
   font-size: clamp(3.3rem, 5.6vw, 5.6rem);
   font-weight: 600;
@@ -645,7 +645,7 @@ a {
   }
 
   .intro h1 {
-    margin: 12px 0;
+    margin: 4px 0 12px;
     font-size: clamp(3.5rem, 11.3vw, 4.9rem);
   }
 
@@ -747,7 +747,7 @@ a {
   }
 
   .intro h1 {
-    margin: 17px 0;
+    margin: 6px 0 17px;
     font-size: clamp(2.9rem, 5.1vw, 4.5rem);
   }
 
