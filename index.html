@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="JIN — Vertica 데이터 엔지니어. 대규모 데이터 웨어하우스와 현대적인 데이터 레이크하우스를 설계합니다."
+    />
+    <meta name="theme-color" content="#101311" />
+    <title>JIN — Data Engineer Portfolio</title>
+    <link rel="icon" type="image/png" href="logo/jin_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="JIN 홈">
+          <img src="logo/jin_logo.png" alt="" />
+        </a>
+        <details class="connect-menu">
+          <summary class="connect-trigger" aria-label="Connect by email">
+            <svg class="connect-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <rect x="2.5" y="4" width="15" height="12" rx="1.5"></rect>
+              <path d="m3.5 5 6.5 5.5L16.5 5"></path>
+            </svg>
+            <span>CONNECT</span>
+          </summary>
+          <div class="connect-popup">
+            <span class="popup-label">GET IN TOUCH</span>
+            <a href="mailto:wjdtnvksek98@gmail.com">wjdtnvksek98@gmail.com</a>
+          </div>
+        </details>
+      </header>
+
+      <main class="profile-layout" id="home">
+        <section class="intro" aria-labelledby="hero-title">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> DATA ENGINEERING</p>
+          <h1 id="hero-title"><span class="title-role">Data Engineer,</span><br /><span class="hero-name">JIN<span class="title-period">.</span></span></h1>
+          <p class="intro-copy">
+            페타바이트급 대규모 데이터 웨어하우스(DW) 아키텍처 설계부터 고성능 튜닝까지, 데이터의 초고속 분석을 실현합니다. 전통적인 인프라 운영 경험을 바탕으로 현대적인 데이터 레이크하우스 생태계로의 확장을 주도합니다.
+          </p>
+        </section>
+
+        <section class="stack-panel" aria-labelledby="stack-title">
+          <div class="stack-heading">
+            <div>
+              <h2 id="stack-title">Technology stack<span class="title-period">.</span></h2>
+            </div>
+          </div>
+          <div class="stack-list">
+            <article class="stack-row">
+              <h3>DB</h3>
+              <ul class="tag-list" aria-label="DB 기술">
+                <li>Vertica</li>
+                <li>Databricks</li>
+                <li>MPP Architecture</li>
+                <li>Query Tuning</li>
+              </ul>
+            </article>
+            <article class="stack-row">
+              <h3>Cloud</h3>
+              <ul class="tag-list" aria-label="Cloud 기술">
+                <li>AWS</li>
+                <li>Cloud-Native Transition</li>
+              </ul>
+            </article>
+            <article class="stack-row">
+              <h3>Data Ops</h3>
+              <ul class="tag-list" aria-label="Data Ops 기술">
+                <li>Iceberg</li>
+                <li>Polaris</li>
+                <li>GlueDB</li>
+                <li>dbt</li>
+                <li>Apache Hop</li>
+                <li>Airflow</li>
+              </ul>
+            </article>
+            <article class="stack-row">
+              <h3>OS</h3>
+              <ul class="tag-list" aria-label="OS 기술">
+                <li>Linux</li>
+                <li>Shell Scripting</li>
+              </ul>
+            </article>
+          </div>
+          <section class="stack-certifications" aria-labelledby="certifications-title">
+            <h3 id="certifications-title">Certifications<span class="title-period">.</span></h3>
+            <ul class="certification-list tag-list" aria-label="Certifications">
+              <li>Vertica Certified Professional</li>
+              <li>Databricks Certified Data Engineer Associate</li>
+              <li>리눅스마스터 2급</li>
+              <li>AZ-900</li>
+              <li>SQLD</li>
+            </ul>
+          </section>
+        </section>
+      </main>
+
+      <section class="work-section" aria-label="Selected work">
+        <div class="work-tabs" role="tablist" aria-label="Work categories">
+          <button class="work-tab" id="tab-projects" type="button" role="tab" aria-selected="true" aria-controls="panel-projects" tabindex="0">Projects</button>
+          <button class="work-tab" id="tab-poc" type="button" role="tab" aria-selected="false" aria-controls="panel-poc" tabindex="-1">PoC</button>
+          <button class="work-tab" id="tab-experiments" type="button" role="tab" aria-selected="false" aria-controls="panel-experiments" tabindex="-1">Personal</button>
+        </div>
+        <div class="work-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" tabindex="0">
+          <div class="work-cards">
+            <article class="work-card"><span class="work-number">15</span><h2>제일펑타이 AWS 리전 변경</h2><time class="work-date">2026년 3월 - 2026년 4월</time><p>제일펑타이 AWS 환경의 Vertica를 신규 리전에 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">14</span><h2>삼성SDS 클라우드 환경 신규 구축</h2><time class="work-date">2025년 8월 - 2026년 2월</time><p>기존 Vertica DB를 삼성 누리클라우드에 신규 구축하고 이관했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">13</span><h2>보훈병원 CDW 구축</h2><time class="work-date">2025년 8월</time><p>보훈병원의 CDW를 신규 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">12</span><h2>KRX BMT</h2><time class="work-date">2025년 6월 - 2025년 7월</time><p>한국거래소 신규 업무의 Vertica 도입을 위한 성능을 검증했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">11</span><h2>신한은행 통합 DW 구축</h2><time class="work-date">2023년 5월 - 2024년 6월</time><p>기존 타 DB와 함께 사용하던 업무를 Vertica로 통합해 대규모 통합 데이터 웨어하우스를 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">10</span><h2>하나은행 프로젝트 ONE 구축</h2><time class="work-date">2022년 12월 - 2023년 4월</time><p>하나은행 통합 데이터 플랫폼 구축 사업에서 Vertica 기반 분석 DW를 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">09</span><h2>LGU+ Vertica MIGDB 전환</h2><time class="work-date">2023년 2월</time><p>기존 데이터를 Vertica 신규 DB로 이관해 분석 업무 성능을 개선했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">08</span><h2>조폐공사 DW 구축</h2><time class="work-date">2023년 2월</time><p>한국조폐공사의 공공 데이터를 통합 관리하고 분석을 지원하는 Vertica DW를 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">07</span><h2>제일펑타이 Vertica EON 모드 재구축</h2><time class="work-date">2022년 11월</time><p>PTK의 글로벌 마케팅 데이터 분석을 위해 SC 분리 아키텍처 기반 EON 모드로 재구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">06</span><h2>삼성서울병원 통합 CDW 구축</h2><time class="work-date">2022년 10월</time><p>방대한 임상 데이터를 Vertica 기반으로 최적화해 고성능 통합 CDW를 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">05</span><h2>LGU+ Vertica EON 모드 전환</h2><time class="work-date">2022년 9월</time><p>데이터와 연산 자원이 결합된 기존 ENT 모드를 컴퓨팅과 스토리지가 분리된 EON 모드로 전환했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">04</span><h2>한화생명 금융서비스 DW 구축</h2><time class="work-date">2022년 5월</time><p>한화생명 금융서비스 데이터를 Vertica로 분석·처리하는 고성능 DW를 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">03</span><h2>서울대병원 통합 CDW 구축</h2><time class="work-date">2022년 4월</time><p>의료 데이터를 분석에 최적화하고 Vertica 기반 통합 CDW를 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">02</span><h2>차병원 통합 CDW 구축</h2><time class="work-date">2022년 2월</time><p>의료 데이터를 통합해 신속한 의사결정을 지원하는 통합 CDW를 Vertica로 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">01</span><h2>신한은행 마이데이터 구축</h2><time class="work-date">2021년 9월 - 2021년 12월</time><p>대규모 금융 거래 데이터 처리를 위한 Vertica 기반 고성능 분석 환경을 구축했습니다.</p><span class="work-tech">VERTICA</span></article>
+          </div>
+        </div>
+        <div class="work-panel" id="panel-poc" role="tabpanel" aria-labelledby="tab-poc" tabindex="0" hidden>
+          <div class="work-cards">
+            <article class="work-card"><span class="work-number">03</span><h2>테크핀레이팅스 PoC</h2><time class="work-date">2025년 2월 - 2025년 3월</time><p>통합 DW 구축을 위한 Vertica 데이터 분석 및 적합성을 검증했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">02</span><h2>하나은행 PoC</h2><time class="work-date">2022년 7월</time><p>대용량 쿼리를 Vertica로 처리하고 성능 향상을 검증했습니다.</p><span class="work-tech">VERTICA</span></article>
+            <article class="work-card"><span class="work-number">01</span><h2>우리은행 PoC</h2><time class="work-date">2022년 6월</time><p>빠른 적재와 쿼리 수행을 Vertica PoC로 검증했습니다.</p><span class="work-tech">VERTICA</span></article>
+          </div>
+        </div>
+        <div class="work-panel" id="panel-experiments" role="tabpanel" aria-labelledby="tab-experiments" tabindex="0" hidden>
+          <div class="work-cards">
+            <a class="work-card work-card-link" href="https://jin0326.github.io/vertica_blog/" target="_blank" rel="noopener noreferrer" aria-label="Vertica Blog (새 탭에서 열기)"><span class="work-number">01</span><h2>Vertica Blog</h2><p>실무 경험을 통해 쌓은 Vertica 지식과 노하우를 정리한 기술 블로그입니다. <span aria-hidden="true">↗</span></p></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="site-footer">© 2026 JIN PORTFOLIO. All rights reserved.</footer>
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
