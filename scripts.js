@@ -15,6 +15,18 @@ function selectWorkTab(selectedTab, moveFocus = false) {
   }
 }
 
+function selectWorkTabFromHash() {
+  const hash = window.location.hash.slice(1);
+  const tab = workTabs.find(
+    (candidate) =>
+      candidate.id === hash || candidate.getAttribute("aria-controls") === hash,
+  );
+
+  if (tab) {
+    selectWorkTab(tab);
+  }
+}
+
 for (const [index, tab] of workTabs.entries()) {
   tab.addEventListener("click", () => selectWorkTab(tab));
   tab.addEventListener("keydown", (event) => {
@@ -36,3 +48,6 @@ for (const [index, tab] of workTabs.entries()) {
     selectWorkTab(workTabs[nextIndex], true);
   });
 }
+
+window.addEventListener("hashchange", selectWorkTabFromHash);
+selectWorkTabFromHash();
