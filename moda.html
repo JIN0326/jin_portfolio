@@ -101,7 +101,7 @@
             <div class="project-gallery-grid">
               <figure class="project-screenshot">
                 <img src="moda_ui/01main.png" alt="MODA dashboard showing schedule status, system status, database connections, and recent jobs" loading="lazy" />
-                <figcaption>대시보드에서 스케줄·서비스·DB 상태와 최근 작업 결과를 확인합니다.</figcaption>
+                <figcaption>대시보드에서 스케줄·서비스·DB 상태와 최근 작업 결과를 확인합니다.<p>상세 정보를 원하는 카드를 클릭하면 해당 페이지로 이동합니다. </figcaption>
               </figure>
             </div>
           </div>
@@ -110,12 +110,21 @@
             <h3>Settings</h3>
             <div class="project-gallery-grid">
               <figure class="project-screenshot">
-                <img src="moda_ui/02setting_1.png" alt="MODA system settings for migration, transformation, and scheduling tools" loading="lazy" />
-                <figcaption>Migration, Transformation, Scheduling 도구의 설치 정보와 실행 상태를 관리합니다.</figcaption>
+                <img src="moda_ui/02setting_1.png" alt="MODA tool installation screen with program selection, server host, SSH user, and Install button" loading="lazy" />
+                <figcaption>
+                  <p>[Program 선택 후 Install 클릭]</p>
+                  <p>Migration, Transformation, Scheduling 도구의 설치를 진행합니다.</p>
+                  <p>작업에 알맞는 프로그램을 선택 후 설치할 서버의 IP를 기입합니다.</p>
+                  <p>조건은 MODA의 서버와 프로그램을 설치할 서버가 네트워크 통신이 가능해야 하며 특정 유저의 passwordless 방식으로 수행됩니다.</p>
+                </figcaption>
               </figure>
               <figure class="project-screenshot">
-                <img src="moda_ui/02setting_2.png" alt="MODA confirmation dialog for removing a configured service" loading="lazy" />
-                <figcaption>서비스 설정을 MODA에서 제거하기 전 확인하는 화면입니다.</figcaption>
+                <img src="moda_ui/02setting_2.png" alt="MODA settings showing configured tools, versions, and service statuses" loading="lazy" />
+                <figcaption>설치된 도구의 버전과 실행 상태를 확인하고 Start, Stop, Delete 버튼으로 관리합니다.</figcaption>
+              </figure>
+              <figure class="project-screenshot">
+                <img src="moda_ui/02setting_3.png" alt="MODA confirmation dialog for removing a configured service" loading="lazy" />
+                <figcaption>[Delete 클릭]<p>Settings 화면에서 서비스의 설정 제거를 확인하는 팝업이 열립니다.</p></figcaption>
               </figure>
             </div>
           </div>
@@ -129,7 +138,7 @@
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/03connection_2.png" alt="MODA new database connection form" loading="lazy" />
-                <figcaption>DB 유형, 접속 정보, 데이터베이스명을 입력하고 연결을 테스트합니다.</figcaption>
+                <figcaption>[+ New Connection 클릭]<p>DB 유형, 접속 정보, 데이터베이스명을 입력하고 연결을 테스트합니다.<p>Default로 JDBC 드라이버가 사용됩니다. </figcaption>
               </figure>
             </div>
           </div>
@@ -143,15 +152,15 @@
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/04migration_2.png" alt="MODA migration setup form for source and target connections, scope, and load options" loading="lazy" />
-                <figcaption>Source·Target 연결과 스키마/테이블 범위, 생성·적재 방식을 설정합니다.</figcaption>
+                <figcaption>[+ New Migration 클릭]<p>Source·Target 연결과 스키마·테이블 범위, 생성·적재 방식을 설정합니다.<p>Source·Target Connection 리스트에는 Connection 페이지에서 등록한 DB의 리스트가 표출됩니다.</figcaption>
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/04migration_3.png" alt="MODA migration run history with execution status and log access" loading="lazy" />
-                <figcaption>이관 작업별 실행 시각과 성공 여부를 확인하고 실행 로그를 엽니다.</figcaption>
+                <figcaption>[Mirgration List 클릭]<p>이관 작업별 실행 시각과 성공 여부 그리고 이전의 실행 로그를 확인합니다.</figcaption>
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/04migration_4.png" alt="MODA Apache Hop migration execution log" loading="lazy" />
-                <figcaption>Apache Hop 파이프라인의 단계별 실행 로그를 확인합니다.</figcaption>
+                <figcaption>[View Log 클릭]<p>Migration의 Run History에서 해당 Apache Hop 실행 로그가 팝업으로 열립니다.</figcaption>
               </figure>
             </div>
           </div>
@@ -165,19 +174,24 @@
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/05transformation_2.png" alt="MODA SQL transformation form with source, target, query, and write disposition" loading="lazy" />
-                <figcaption>Source·Target 테이블과 SQL, 쓰기 방식을 정의해 변환 작업을 구성합니다.</figcaption>
+                <figcaption>
+                  <p>[+ New Transformation 클릭]</p>
+                  <p>Connection에 등록되어 있는 DB 중 하나를 선택하여 Source·Target 테이블의 변환 작업을 구성합니다.</p>
+                  <p>SQL 질의를 작성하여 등록하고 Write Disposition을 지정할 수 있습니다.</p>
+                  <p>Write Disposition에는 Append/Truncate+Insert/Recreate Table/View 가 있습니다.</p>
+                </figcaption>
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/05transformation_3.png" alt="MODA SQL transformation query preview" loading="lazy" />
-                <figcaption>등록된 변환 작업에서 실행에 사용하는 SQL 질의를 확인합니다.</figcaption>
+                <figcaption>[View Query 클릭]<p>transformation 작업에 등록된 SQL 질의 팝업이 열립니다.</figcaption>
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/05transformation_4.png" alt="MODA SQL transformation job with run history and statuses" loading="lazy" />
-                <figcaption>변환 작업의 최근 실행 상태와 실행 이력을 확인합니다.</figcaption>
+                <figcaption>[Transformation List 클릭]<p>변환 작업의 최근 실행 상태와 실행 이력을 확인합니다.</figcaption>
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/05transformation_5.png" alt="MODA dbt transformation execution log with generated SQL" loading="lazy" />
-                <figcaption>dbt 실행 로그에서 모델 실행 결과와 생성된 SQL을 확인합니다.</figcaption>
+                <figcaption>[View Log 클릭]<p>SQL transformation의 Run History에서 dbt 실행 로그가 팝업으로 열립니다.</figcaption>
               </figure>
             </div>
           </div>
@@ -191,15 +205,15 @@
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/06scheduling_2.png" alt="MODA schedule form supporting cron and job-completion triggers" loading="lazy" />
-                <figcaption>Cron 주기 또는 선행 작업 완료 조건으로 실행 일정을 설정합니다.</figcaption>
+                <figcaption>[+ New Schedule 클릭]<p>Cron 주기 또는 선행 작업 완료 조건으로 실행 일정을 설정합니다.<p>Job Type에는 Migration/Transformation 중 선택이 가능합니다.</figcaption>
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/06scheduling_3.png" alt="MODA schedule run history with timestamps and execution status" loading="lazy" />
-                <figcaption>스케줄별 실행 시각과 성공 여부 등 실행 이력을 확인합니다.</figcaption>
+                <figcaption>[Schedule List 클릭]<p>스케줄별 실행 시각과 성공 여부 등 실행 이력을 확인합니다.</figcaption>
               </figure>
               <figure class="project-screenshot">
                 <img src="moda_ui/06scheduling_4.png" alt="MODA job execution log detail" loading="lazy" />
-                <figcaption>작업 로그를 열어 파이프라인 실행 과정을 확인합니다.</figcaption>
+                <figcaption>[View Log 클릭]<p>Run History에서 해당 작업의 파이프라인 실행 로그가 팝업으로 열립니다.</figcaption>
               </figure>
             </div>
           </div>
